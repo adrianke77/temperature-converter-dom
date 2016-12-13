@@ -4,11 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Hello Front-End</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Temperature Converter</title>
 </head>
-<body>
-  <h1>Hello Front-End</h1>
-
+<body>  
+  <div class = "title">
+    <h1>Temperature Converter</h1>
+  </div>
+  <div class = "inputFrame">
+    <input type="number" placeholder ="enter temp here" class="inputField">
+  </div>
+  <div class = "scaleRadio">
+  <form onsubmit="return false">
+    <input type = radio name="scale" value="toCel" checked> Fahrenheit to Celsius <br>
+    <input type = radio name="scale" value="toFah"> Celsius to Fahrenheit <br>
+    <input type = "submit" class = "convertButton" value = "Convert">
+  </form>
+  </div>
+  <div class = "outputDiv"></div>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
